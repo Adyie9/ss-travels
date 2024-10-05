@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: #3498db;
+}
+
+.popup {
+    display: none; 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #5a5858;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(52, 81, 116, 0.2);
+    z-index: 1000; 
+    max-width: 400px; 
+    text-align: center;
+}
+
+.popup-content {
+    background: url('depositphotos_268828362-stock-photo-creative-background-red-suitcase-the.jpg') no-repeat center center; /* Background image */
+    background-size: cover; /* Ensure the image covers the entire div */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: white; /* Text color */
+    width: 300px; /* Adjust as needed */
+    height: 200px; /* Adjust as needed */
+}
+
+.popup-content h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #000;
+}
+
+.popup-content p {
+    margin-top: 100px;
+    font-size: 16px;
+    color: #000;
+}
+
+/* Close button styling */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust to match your layout needs */
+}
+
+/* Style for the home section */
+.home {
+    text-align: center;
+}
+
+/* Style for the h1 element */
+.home h1 {
+    font-size: 6vw;
+    text-transform: uppercase;
+    color: #1b1919;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease-in-out forwards;
+    animation-delay: 2s;
+}
+@keyframes fadeInUp {
+    from { 
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to { 
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #1c1e1c;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
+}
+
+/* Style for the h1 element */
+nav h1 {
+    font-size: 24px; /* Adjust font size as needed */
+    text-transform: uppercase;
+}
+
+/* Style for the button */
+nav button {
+    background-color: #ffffff;
+    color: #388c74;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+/* Hover effect for the button */
+nav button:hover {
+    background-color: #368e68; /* Darker shade of green on hover */
+}
+
+.nav_part2 {
+    display: flex;
+    align-items: center;
+}
+
+.nav_part2 h4 {
+    margin-right: 35px;
+    cursor: pointer;
+}
+
+.nav_part2 a {
+    color: white;
+    text-decoration: none;
+    transition: border-bottom 0.3s ease; /* Smooth transition for underline */
+}
+
+.nav_part2 a:hover {
+    border-bottom: 1px solid white; /* White underline on hover */
+}
+.image-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Adjust gap as needed */
+    margin-top: 20px; /* Space above the image gallery */
+}
+
+.image-gallery img {
+    width: calc(25% - 10px); /* Each image takes 25% of the available width minus the gap */
+    height: auto;
+    border-radius: 5px; /* Optional: Add border radius for rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
+}
+
+

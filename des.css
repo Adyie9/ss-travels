@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: #aeecc1;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #1c1e1c;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
+}
+
+/* Style for the h1 element */
+nav h1 {
+    font-size: 24px; /* Adjust font size as needed */
+    text-transform: uppercase;
+}
+
+/* Style for the button */
+nav button {
+    background-color: #ffffff;
+    color: #388c74;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+/* Hover effect for the button */
+nav button:hover {
+    background-color: #368e68; /* Darker shade of green on hover */
+}
+
+.nav_part2 {
+    display: flex;
+    align-items: center;
+}
+
+.nav_part2 h4 {
+    margin-right: 35px;
+    cursor: pointer;
+}
+
+.nav_part2 a {
+    color: white;
+    text-decoration: none;
+    transition: border-bottom 0.3s ease; /* Smooth transition for underline */
+}
+
+.nav_part2 a:hover {
+    border-bottom: 1px solid white; /* White underline on hover */
+}
+
+.destination-container {
+    margin-top: 80px; /* Adjust to ensure the nav bar is not covered */
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.destination {
+    width: 30%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.destination h2 {
+    margin-bottom: 10px;
+}
+
+.destination img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.destination p {
+    line-height: 1.6;
+    color: #333333;
+}
+
+/* Modal styles */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%; /* Adjusted modal width */
+}
+
+.modal-img {
+    width: 50%; /* Adjusted image width */
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto 20px; /* Center the image and add bottom margin */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}

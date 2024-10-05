@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="try.css">
+</head>
+<body>
+    <nav>
+        <h1>Fly High</h1>
+        <div class="nav_part2">
+            <h4><a href="index.html">Home</a></h4>
+            <h4 ><a href="co.html">Contacts</a></h4>
+            <h4></h4>
+        </div>
+        <button>Let's Talk</button>
+    </nav>
+
+    <div class="destination-container">
+        <div class="destination">
+            <h2>Andaman</h2>
+            <img src="img/anda.avif" alt="Andaman">
+            <p>Discover the mesmerizing beauty of Andaman Islands with our exclusive package. Explore pristine beaches, vibrant coral reefs, and indulge in thrilling water sports.</p>
+            <p><strong>Package Includes:</strong> Flight tickets, hotel accommodation, guided tours, water activities.</p>
+            <button onclick="showDetails()">Check</button>
+        </div>
+        <div class="destination">
+            <h2>Sikkim</h2>
+            <img src="img/sikk.jpeg" alt="Sikkim">
+            <p>Embark on a journey to Sikkim, the jewel of the Himalayas. Experience breathtaking landscapes, serene monasteries, and vibrant culture amidst the snow-capped mountains.</p>
+            <p><strong>Package Includes:</strong> Train tickets, homestay accommodation, local sightseeing, trekking.</p>
+        </div>
+        <div class="destination">
+            <h2>Shillong</h2>
+            <img src="img/shill.avif" alt="Shillong">
+            <p>Visit the Scotland of the East - Shillong, known for its lush green hills, cascading waterfalls, and pleasant weather. Immerse yourself in the tranquility and charm of this picturesque destination.</p>
+            <p><strong>Package Includes:</strong> Bus tickets, resort accommodation, sightseeing to waterfalls, boating.</p>
+        </div>
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Andaman</h2>
+            <img src="img/anda.avif" alt="Andaman" class="modal-img">
+            <p>Discover the mesmerizing beauty of Andaman Islands with our exclusive package. Explore pristine beaches, vibrant coral reefs, and indulge in thrilling water sports.</p>
+            <p><strong>Duration:</strong> 6 days, 7 nights</p>
+            <p><strong>Price:</strong> $1500 per person</p>
+            <p><strong>Package Includes:</strong> Flight tickets, hotel accommodation, guided tours, water activities.</p>
+            <div class="modal-img-container">
+                <img src="img/752d0c1a-7273-4eaa-a3b9-16861faa2326.jpeg" alt="Andaman 1" class="modal-img">
+                <img src="img/96c76d32-f150-4db5-a25f-48320a3a77fe.jpeg" alt="Andaman 2" class="modal-img">
+                <img src="img/a12463ee-1b5f-4e66-ad83-328eb6caa8e9.jpeg" alt="Andaman 3" class="modal-img">
+                <img src="img/2be4012b-1a73-46f6-9980-7100b9e7b029.jpeg" alt="Andaman 4" class="modal-img">
+            </div>
+        </div>
+    </div>
+
+    <script src="try.js"></script>
+</body>
+</html>

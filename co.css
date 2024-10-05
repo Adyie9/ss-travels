@@ -1,0 +1,112 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #282626;
+    background-image: url(/img/large-main_ocean_water.jpg);
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0px;
+    right: 10px;
+    width: 100%;
+    background-color: #1c1e1c;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav h1 {
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+nav button {
+    background-color: #ffffff;
+    color: #191f28;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 30px;
+}
+
+nav button:hover {
+    background-color: #368e68;
+}
+
+.nav_part2 {
+    display: flex;
+    align-items: center;
+}
+
+.nav_part2 h4 {
+    margin-right: 35px;
+    cursor: pointer;
+}
+
+.nav_part2 a {
+    color: white;
+    text-decoration: none;
+    transition: border-bottom 0.3s ease;
+}
+
+.nav_part2 a:hover {
+    border-bottom: 1px solid white;
+}
+
+.contact-container {
+    margin-top: 160px; /* Adjust to ensure the nav bar is not covered */
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #263a3c; /* Background color for the container */
+    color: #ffffff; /* Text color */
+}
+
+.contact-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffffff; /* Text color */
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #ffffff; /* Label color */
+}
+
+.form-group input,
+.form-group textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #f0f0f0; /* Input and textarea background color */
+    color: #000; /* Input and textarea text color */
+}
+
+.form-group input[readonly],
+.form-group textarea[readonly] {
+    background-color: #e0e0e0; /* Readonly fields background color */
+    color: #000; /* Readonly fields text color */
+}
